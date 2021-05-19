@@ -18,6 +18,12 @@ public class MemberServiceImpl implements MemberService {
         // 다형성에 의해 인터페이스가 아니라 구현체에 있는 save 를 호출.
 
     public Member findMember(Long memberId) {
+
         return memberRepository.findById(memberId);
+    }
+
+    //테스트 용도
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
     }
 }
