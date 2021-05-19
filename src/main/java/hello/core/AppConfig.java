@@ -22,8 +22,8 @@ import org.springframework.context.annotation.Configuration;
 /**출력 예상
  * call AppConfig.memberService
  * call AppConfig.memberRepository
- * call AppConfig.memberRepository
  * call AppConfig.orderService
+ * call AppConfig.memberRepository
  * call AppConfig.memberRepository
  */
 
