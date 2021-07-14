@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * 설정 정보
- * 각각에 @Bean을 적어주면 스프링 컨테이너에 등록됨.
+ * 각각에 @Bean 을 적어주면 스프링 컨테이너에 등록됨.
  */
 //@Bean memberService -> new MemoryMemberRepository()
 //@Bean orderService -> new MemoryMemberRepository()
@@ -37,7 +37,7 @@ public class AppConfig {
 
     @Bean
     public MemberService memberService(){
-        System.out.println("call AppConfig.memberService"); //soutm
+        System.out.println("call AppConfig.memberService");
         return new MemberServiceImpl(memberRepository());
     }
     @Bean
