@@ -12,6 +12,10 @@ cache:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
 
+# /home/travis/.travis/functions: line 409: ./gradlew: Permission denied 에러 해결
+before_install:
+  - chmod +x gradlew
+
 script: "./gradlew clean build"
 
 # CI 실행 완료시 메일로 알람
